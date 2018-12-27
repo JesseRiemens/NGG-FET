@@ -69,7 +69,7 @@ F0 "Counter" 50
 F1 "Counter.sch" 50
 F2 "E" I R 4100 3600 50 
 F3 "D" I R 4100 3900 50 
-F4 "C" I L 2600 3750 50 
+F4 "C" I L 2600 3800 50 
 F5 "S1" O L 2600 3900 50 
 F6 "S0" O L 2600 4000 50 
 $EndSheet
@@ -85,7 +85,7 @@ S 700  3500 1450 550
 U 5C24DFBC
 F0 "NE555 1 Hz Clock" 50
 F1 "NE555 1 Hz Clock.sch" 50
-F2 "C" O R 2150 3750 50 
+F2 "C" O R 2150 3800 50 
 $EndSheet
 $Sheet
 S 700  4300 1450 550 
@@ -181,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3900 4350 3900
 Wire Wire Line
-	2150 3750 2600 3750
+	2150 3800 2600 3800
 Wire Wire Line
 	2600 4350 2500 4350
 Wire Wire Line
