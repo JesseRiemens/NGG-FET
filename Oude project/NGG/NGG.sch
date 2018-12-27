@@ -1,0 +1,201 @@
+EESchema Schematic File Version 4
+LIBS:NGG-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2150 1100 850  900 
+U 5BDB1F46
+F0 "comparator" 50
+F1 "comparator.sch" 50
+F2 "A0" I L 2150 1450 50 
+F3 "A1" I L 2150 1350 50 
+F4 "A2" I L 2150 1250 50 
+F5 "B0" I L 2150 1850 50 
+F6 "B1" I L 2150 1750 50 
+F7 "B2" I L 2150 1650 50 
+F8 "LT" O R 3000 1750 50 
+F9 "GT" O R 3000 1350 50 
+F10 "EQ" O R 3000 1550 50 
+$EndSheet
+$Sheet
+S 1050 1100 800  900 
+U 5BDB50FF
+F0 "schakelaars" 50
+F1 "schakelaars.sch" 50
+F2 "A2" O R 1850 1250 50 
+F3 "A1" O R 1850 1350 50 
+F4 "A0" O R 1850 1450 50 
+F5 "B0" O R 1850 1850 50 
+F6 "B1" O R 1850 1750 50 
+F7 "B2" O R 1850 1650 50 
+$EndSheet
+Wire Wire Line
+	1850 1250 2150 1250
+Wire Wire Line
+	1850 1350 2150 1350
+Wire Wire Line
+	1850 1450 2150 1450
+Wire Wire Line
+	1850 1650 2150 1650
+Wire Wire Line
+	2150 1750 1850 1750
+Wire Wire Line
+	1850 1850 2150 1850
+$Sheet
+S 3350 1100 900  900 
+U 5BDB9563
+F0 "vertaalCircuit" 50
+F1 "vertaalCircuit.sch" 50
+F2 "LT" I L 3350 1750 50 
+F3 "GT" I L 3350 1350 50 
+F4 "EQ" I L 3350 1550 50 
+F5 "K" I L 3350 1900 50 
+F6 "E" O R 4250 1300 50 
+F7 "D" O R 4250 1550 50 
+F8 "L" O R 4250 1800 50 
+$EndSheet
+$Sheet
+S 4550 1100 900  900 
+U 5BDB9589
+F0 "counter" 50
+F1 "counter.sch" 50
+F2 "E" I L 4550 1300 50 
+F3 "D" I L 4550 1550 50 
+F4 "C" I L 4550 1800 50 
+F5 "S0" O R 5450 1400 50 
+F6 "S1" O R 5450 1250 50 
+$EndSheet
+$Sheet
+S 1050 2350 800  1050
+U 5BDB9590
+F0 "clocks" 50
+F1 "clocks.sch" 50
+F2 "1Hz" O R 1850 2550 50 
+F3 "fLow" O R 1850 2750 50 
+F4 "fMid" O R 1850 2950 50 
+F5 "fHigh" O R 1850 3150 50 
+$EndSheet
+Wire Wire Line
+	4250 1300 4550 1300
+Wire Wire Line
+	4250 1550 4550 1550
+Wire Wire Line
+	3000 1750 3350 1750
+Wire Wire Line
+	3000 1550 3350 1550
+Wire Wire Line
+	3000 1350 3350 1350
+$Sheet
+S 2150 2350 850  1050
+U 5BDC1217
+F0 "vergelijkknop" 50
+F1 "vergelijkknop.sch" 50
+F2 "K" O R 3000 2850 50 
+$EndSheet
+Wire Wire Line
+	3000 2850 3200 2850
+Wire Wire Line
+	3200 1900 3350 1900
+Wire Wire Line
+	4550 1800 4450 1800
+Wire Wire Line
+	4450 1800 4450 2100
+Wire Wire Line
+	4450 2100 1900 2100
+Wire Wire Line
+	1900 2550 1850 2550
+$Sheet
+S 5750 1100 950  900 
+U 5BDC195E
+F0 "MUX" 50
+F1 "MUX.sch" 50
+F2 "L" I L 5750 1850 50 
+F3 "M" I L 5750 1700 50 
+F4 "H" I L 5750 1550 50 
+F5 "Mo" O R 6700 1550 50 
+F6 "S1" I L 5750 1250 50 
+F7 "S0" I L 5750 1400 50 
+$EndSheet
+Wire Wire Line
+	5450 1250 5750 1250
+Wire Wire Line
+	5450 1400 5750 1400
+Wire Wire Line
+	5750 1550 5500 1550
+Wire Wire Line
+	5500 1550 5500 2250
+Wire Wire Line
+	5500 2250 2100 2250
+Wire Wire Line
+	2100 3150 1850 3150
+Wire Wire Line
+	2050 2200 5600 2200
+Wire Wire Line
+	5600 2200 5600 1700
+Wire Wire Line
+	5600 1700 5750 1700
+Wire Wire Line
+	1850 2950 2050 2950
+Wire Wire Line
+	5750 1850 5700 1850
+Wire Wire Line
+	5700 1850 5700 2150
+Wire Wire Line
+	5700 2150 2000 2150
+Wire Wire Line
+	2000 2750 1850 2750
+$Sheet
+S 7000 1100 950  900 
+U 5BDC602A
+F0 "transistor" 50
+F1 "transistor.sch" 50
+F2 "Mo" I L 7000 1550 50 
+F3 "BZ" O R 7950 1550 50 
+$EndSheet
+$Sheet
+S 8250 1100 950  900 
+U 5BDC602F
+F0 "buzzer" 50
+F1 "buzzer.sch" 50
+F2 "BZ" I L 8250 1550 50 
+$EndSheet
+Wire Wire Line
+	6700 1550 7000 1550
+Wire Wire Line
+	7950 1550 8250 1550
+Wire Wire Line
+	2100 2250 2100 3150
+Wire Wire Line
+	2050 2200 2050 2950
+Wire Wire Line
+	2000 2150 2000 2750
+Wire Wire Line
+	1900 2100 1900 2550
+Wire Wire Line
+	3200 1900 3200 2850
+$Sheet
+S 3350 2350 900  1050
+U 5BDC9FDC
+F0 "succesLED" 50
+F1 "succesLED.sch" 50
+F2 "L" I R 4250 2850 50 
+$EndSheet
+Wire Wire Line
+	4350 2850 4350 1800
+Wire Wire Line
+	4350 1800 4250 1800
+Wire Wire Line
+	4350 2850 4250 2850
+$EndSCHEMATC

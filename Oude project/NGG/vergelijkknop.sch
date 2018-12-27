@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+LIBS:NGG-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3250 1450 2    50   Output ~ 0
+K
+$Comp
+L power:GND #PWR0105
+U 1 1 5BDCBF6B
+P 1000 2050
+F 0 "#PWR0105" H 1000 1800 50  0001 C CNN
+F 1 "GND" H 1005 1877 50  0000 C CNN
+F 2 "" H 1000 2050 50  0001 C CNN
+F 3 "" H 1000 2050 50  0001 C CNN
+	1    1000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5BDCC00E
+P 1200 1450
+F 0 "SW2" H 1200 1300 50  0000 C CNN
+F 1 "SW_Push" H 1200 1400 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1200 1650 50  0001 C CNN
+F 3 "" H 1200 1650 50  0001 C CNN
+	1    1200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5BDCC084
+P 1000 1150
+F 0 "#PWR0106" H 1000 1000 50  0001 C CNN
+F 1 "+5V" H 1015 1323 50  0000 C CNN
+F 2 "" H 1000 1150 50  0001 C CNN
+F 3 "" H 1000 1150 50  0001 C CNN
+	1    1000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE555 U4
+U 1 1 5BDCC163
+P 2700 1650
+F 0 "U4" H 2700 1700 50  0000 C CNN
+F 1 "NE555" H 2700 1600 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 2700 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1850 2150 1850
+Wire Wire Line
+	1000 2050 1950 2050
+Wire Wire Line
+	1000 1450 1000 2050
+Connection ~ 1000 2050
+$Comp
+L Device:R R2
+U 1 1 5BDCCC70
+P 1400 1300
+F 0 "R2" H 1470 1346 50  0000 L CNN
+F 1 "R" H 1470 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1330 1300 50  0001 C CNN
+F 3 "~" H 1400 1300 50  0001 C CNN
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1150 1400 1150
+Wire Wire Line
+	2700 1150 2700 1250
+Wire Wire Line
+	2150 1150 2150 1850
+Connection ~ 2150 1150
+Wire Wire Line
+	2150 1150 2700 1150
+Connection ~ 1400 1150
+Wire Wire Line
+	1400 1150 2150 1150
+Wire Wire Line
+	1400 1450 2200 1450
+Connection ~ 1400 1450
+Wire Wire Line
+	3200 1850 3200 1750
+Wire Wire Line
+	3250 1450 3200 1450
+Wire Wire Line
+	2200 1650 1950 1650
+$Comp
+L Device:C C2
+U 1 1 5BDCD357
+P 1950 1900
+F 0 "C2" H 2065 1946 50  0000 L CNN
+F 1 "10n" H 2065 1855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1988 1750 50  0001 C CNN
+F 3 "~" H 1950 1900 50  0001 C CNN
+	1    1950 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2050
+Wire Wire Line
+	1950 2050 2700 2050
+Wire Wire Line
+	1950 1750 1950 1650
+$Comp
+L Device:R R1
+U 1 1 5BDCD4D9
+P 3450 1400
+F 0 "R1" H 3520 1446 50  0000 L CNN
+F 1 "R" H 3520 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 1400 50  0001 C CNN
+F 3 "~" H 3450 1400 50  0001 C CNN
+	1    3450 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 1150
+Wire Wire Line
+	3450 1250 3450 1150
+Wire Wire Line
+	2700 1150 3450 1150
+Wire Wire Line
+	3450 1550 3450 1650
+Wire Wire Line
+	3450 1650 3200 1650
+Connection ~ 3200 1650
+$Comp
+L Device:C C1
+U 1 1 5BDCE2CC
+P 3200 1900
+F 0 "C1" H 3315 1946 50  0000 L CNN
+F 1 "C" H 3315 1855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 3238 1750 50  0001 C CNN
+F 3 "~" H 3200 1900 50  0001 C CNN
+	1    3200 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 1750
+Wire Wire Line
+	3200 1750 3200 1650
+Wire Wire Line
+	2700 2050 3200 2050
+Connection ~ 2700 2050
+$EndSCHEMATC

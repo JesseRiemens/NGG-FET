@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+LIBS:NGG-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2650 2100 0    50   Input ~ 0
+L
+Text HLabel 2650 2650 0    50   Input ~ 0
+M
+Text HLabel 2650 3250 0    50   Input ~ 0
+H
+Text HLabel 2100 1250 1    50   Input ~ 0
+S1
+Text HLabel 2500 1250 1    50   Input ~ 0
+S0
+$Comp
+L 4xxx:4049 U1
+U 2 1 5BDD2D14
+P 2100 1550
+F 0 "U1" V 2000 1450 50  0000 L CNN
+F 1 "4049" V 2100 1450 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2100 1550 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4049ubms.pdf" H 2100 1550 50  0001 C CNN
+	2    2100 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L 4xxx:4049 U1
+U 3 1 5BDD2DEF
+P 2500 1550
+F 0 "U1" V 2400 1450 50  0000 L CNN
+F 1 "4049" V 2500 1450 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2500 1550 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4049ubms.pdf" H 2500 1550 50  0001 C CNN
+	3    2500 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1250 1900 1250
+Wire Wire Line
+	2500 1250 2300 1250
+$Comp
+L 4xxx_IEEE:4082 U5
+U 1 1 5BDD3235
+P 3150 2050
+F 0 "U5" H 3150 2200 50  0000 C CNN
+F 1 "4082" H 3150 1900 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 2050 50  0001 C CNN
+F 3 "" H 3150 2050 50  0001 C CNN
+	1    3150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2100 2650 2200
+Wire Wire Line
+	2500 1850 2500 1900
+Wire Wire Line
+	2100 1850 2100 2000
+$Comp
+L 4xxx_IEEE:4082 U5
+U 2 1 5BDD33E0
+P 3150 2600
+F 0 "U5" H 3150 2750 50  0000 C CNN
+F 1 "4082" H 3150 2450 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 2600 50  0001 C CNN
+F 3 "" H 3150 2600 50  0001 C CNN
+	2    3150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2650 2650 2750
+Wire Wire Line
+	2500 1900 2650 1900
+Wire Wire Line
+	2100 2000 2650 2000
+Wire Wire Line
+	2500 1900 2500 2450
+Wire Wire Line
+	2500 2450 2650 2450
+Connection ~ 2500 1900
+Wire Wire Line
+	1900 2550 2650 2550
+Wire Wire Line
+	1900 1250 1900 2550
+$Comp
+L 4xxx_IEEE:4082 U6
+U 1 1 5BDD37E9
+P 3150 3200
+F 0 "U6" H 3150 3350 50  0000 C CNN
+F 1 "4082" H 3150 3050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 3200 50  0001 C CNN
+F 3 "" H 3150 3200 50  0001 C CNN
+	1    3150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3250 2650 3350
+Wire Wire Line
+	2300 3050 2650 3050
+Wire Wire Line
+	2100 3150 2650 3150
+$Comp
+L 4xxx_IEEE:4082 U6
+U 2 1 5BDD3BE4
+P 3150 3750
+F 0 "U6" H 3150 3900 50  0000 C CNN
+F 1 "4082" H 3150 3600 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3150 3750 50  0001 C CNN
+F 3 "" H 3150 3750 50  0001 C CNN
+	2    3150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3600 2650 3600
+Connection ~ 2300 3050
+Wire Wire Line
+	1900 3700 2650 3700
+Wire Wire Line
+	2650 3800 2650 3900
+$Comp
+L power:GND #PWR0107
+U 1 1 5BDD42FB
+P 2550 4050
+F 0 "#PWR0107" H 2550 3800 50  0001 C CNN
+F 1 "GND" H 2555 3877 50  0000 C CNN
+F 2 "" H 2550 4050 50  0001 C CNN
+F 3 "" H 2550 4050 50  0001 C CNN
+	1    2550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2050 3900 2050
+Wire Wire Line
+	3900 2750 3950 2750
+Wire Wire Line
+	3650 2600 3800 2600
+Wire Wire Line
+	3800 2850 3950 2850
+Wire Wire Line
+	3650 3200 3800 3200
+Wire Wire Line
+	3800 2950 3950 2950
+Wire Wire Line
+	3900 3750 3650 3750
+$Comp
+L power:+5V #PWR0111
+U 1 1 5BDCE7A5
+P 4450 2700
+F 0 "#PWR0111" H 4450 2550 50  0001 C CNN
+F 1 "+5V" H 4465 2873 50  0000 C CNN
+F 2 "" H 4450 2700 50  0001 C CNN
+F 3 "" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5BDCE7E5
+P 4450 3100
+F 0 "#PWR0112" H 4450 2850 50  0001 C CNN
+F 1 "GND" H 4455 2927 50  0000 C CNN
+F 2 "" H 4450 3100 50  0001 C CNN
+F 3 "" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx_IEEE:4072 U7
+U 1 1 5BDCA3BF
+P 4450 2900
+F 0 "U7" H 4500 2950 50  0000 L CNN
+F 1 "4072" H 4500 2850 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4450 2900 50  0001 C CNN
+F 3 "" H 4450 2900 50  0001 C CNN
+	1    4450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2050 3900 2750
+Wire Wire Line
+	3800 2600 3800 2850
+Wire Wire Line
+	2300 3050 2300 3600
+Wire Wire Line
+	3800 2950 3800 3200
+Wire Wire Line
+	3900 3050 3900 3750
+Wire Wire Line
+	3900 3050 3950 3050
+Wire Wire Line
+	1900 2550 1900 3700
+Connection ~ 1900 2550
+Wire Wire Line
+	2100 2000 2100 3150
+Connection ~ 2100 2000
+Wire Wire Line
+	3150 3950 3150 4050
+Wire Wire Line
+	3150 4050 2550 4050
+Wire Wire Line
+	2550 4050 2550 3900
+Wire Wire Line
+	2550 3900 2650 3900
+Connection ~ 2550 4050
+Connection ~ 2650 3900
+Wire Wire Line
+	2550 3900 2550 3450
+Wire Wire Line
+	2550 3450 3150 3450
+Wire Wire Line
+	3150 3450 3150 3400
+Connection ~ 2550 3900
+Wire Wire Line
+	2550 3450 2550 2850
+Wire Wire Line
+	2550 2850 3150 2850
+Wire Wire Line
+	3150 2850 3150 2800
+Connection ~ 2550 3450
+Wire Wire Line
+	2550 2850 2550 2300
+Wire Wire Line
+	2550 2300 3150 2300
+Wire Wire Line
+	3150 2300 3150 2250
+Connection ~ 2550 2850
+$Comp
+L power:+5V #PWR?
+U 1 1 5BDD524A
+P 3700 1650
+F 0 "#PWR?" H 3700 1500 50  0001 C CNN
+F 1 "+5V" H 3715 1823 50  0000 C CNN
+F 2 "" H 3700 1650 50  0001 C CNN
+F 3 "" H 3700 1650 50  0001 C CNN
+	1    3700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1650 3700 1800
+Wire Wire Line
+	3700 1800 3150 1800
+Wire Wire Line
+	3150 1800 3150 1850
+Wire Wire Line
+	3700 1800 3700 2350
+Wire Wire Line
+	3700 2350 3150 2350
+Wire Wire Line
+	3150 2350 3150 2400
+Connection ~ 3700 1800
+Wire Wire Line
+	3700 2950 3150 2950
+Wire Wire Line
+	3150 2950 3150 3000
+Wire Wire Line
+	3700 2350 3700 2950
+Connection ~ 3700 2350
+Wire Wire Line
+	3700 2950 3700 3500
+Wire Wire Line
+	3700 3500 3150 3500
+Wire Wire Line
+	3150 3500 3150 3550
+Connection ~ 3700 2950
+Wire Wire Line
+	2300 1250 2300 3050
+Text HLabel 4950 2900 2    50   Output ~ 0
+Mo
+$EndSCHEMATC

@@ -18,16 +18,12 @@ S 700  700  1450 1450
 U 5C24DEB5
 F0 "Switches" 50
 F1 "Switches.sch" 50
-F2 "A" O R 2150 1250 50 
-F3 "B" O R 2150 1500 50 
 $EndSheet
 $Sheet
 S 2600 700  3500 1450
 U 5C24DECE
 F0 "Comparator" 50
 F1 "Comparator.sch" 50
-F2 "A" I L 2600 1250 50 
-F3 "B" I L 2600 1500 50 
 $EndSheet
 $Sheet
 S 4350 2600 1750 1450
@@ -101,8 +97,4 @@ U 5C24E130
 F0 "Succes LED" 50
 F1 "Succes LED.sch" 50
 $EndSheet
-Wire Bus Line
-	2150 1250 2600 1250
-Wire Bus Line
-	2150 1500 2600 1500
 $EndSCHEMATC
