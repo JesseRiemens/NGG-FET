@@ -20,9 +20,9 @@ Text HLabel 1850 2400 0    50   Input ~ 0
 D
 Text HLabel 1850 2750 0    50   Input ~ 0
 C
-Text HLabel 4100 2100 2    50   Output ~ 0
+Text HLabel 6600 2250 2    50   Output ~ 0
 S1
-Text HLabel 4100 2400 2    50   Output ~ 0
+Text HLabel 6600 2550 2    50   Output ~ 0
 S0
 Text Notes 14450 5000 0    50   ~ 0
 OR

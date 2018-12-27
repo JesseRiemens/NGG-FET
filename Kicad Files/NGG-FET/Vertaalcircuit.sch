@@ -344,8 +344,6 @@ $EndComp
 Wire Wire Line
 	2450 5050 2150 5050
 Wire Wire Line
-	2150 5050 2150 4250
-Wire Wire Line
 	2300 3950 2400 3950
 Wire Wire Line
 	2450 4650 2400 4650
@@ -393,11 +391,13 @@ F 3 "~" H 1450 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 2300 2200 0    50   Input ~ 0
-EQ
+K
 Wire Wire Line
-	2300 3550 2300 3300
+	2350 3300 2150 3300
 Wire Wire Line
-	2300 3300 2350 3300
-Connection ~ 2300 3550
+	2150 3300 2150 4250
 Connection ~ 2350 3300
+Connection ~ 2150 4250
+Wire Wire Line
+	2150 4250 2150 5050
 $EndSCHEMATC

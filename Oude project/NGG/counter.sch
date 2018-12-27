@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:NGG-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 15
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -14,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1450 2800 0    50   Input ~ 0
-E
 Text HLabel 1450 2600 0    50   Input ~ 0
+E
+Text HLabel 1450 2800 0    50   Input ~ 0
 D
 Text HLabel 1450 1500 0    50   Input ~ 0
 C
