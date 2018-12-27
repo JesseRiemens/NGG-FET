@@ -18,42 +18,70 @@ S 700  700  1450 1450
 U 5C24DEB5
 F0 "Switches" 50
 F1 "Switches.sch" 50
+F2 "A2" O R 2150 950 50 
+F3 "A1" O R 2150 1100 50 
+F4 "A0" O R 2150 1250 50 
+F5 "B2" O R 2150 1600 50 
+F6 "B1" O R 2150 1750 50 
+F7 "B0" O R 2150 1900 50 
 $EndSheet
 $Sheet
 S 2600 700  3500 1450
 U 5C24DECE
 F0 "Comparator" 50
 F1 "Comparator.sch" 50
+F2 "A2" I L 2600 950 50 
+F3 "A1" I L 2600 1100 50 
+F4 "A0" I L 2600 1250 50 
+F5 "B2" I L 2600 1600 50 
+F6 "B1" I L 2600 1750 50 
+F7 "B0" I L 2600 1900 50 
+F8 "LT" O R 6100 2050 50 
+F9 "GT" O R 6100 1750 50 
+F10 "EQ" O R 6100 1900 50 
 $EndSheet
 $Sheet
 S 4350 2600 1750 1450
 U 5C24DF31
 F0 "Vertaalcircuit" 50
 F1 "Vertaalcircuit.sch" 50
+F2 "GT" I R 6100 3000 50 
+F3 "LT" I R 6100 2700 50 
+F4 "EQ" I R 6100 2850 50 
+F5 "K" I L 4350 2900 50 
+F6 "E" O L 4350 3600 50 
+F7 "D" O L 4350 3900 50 
 $EndSheet
 $Sheet
 S 2600 2600 1500 650 
 U 5C24DF5D
 F0 "NE555 3.5-4.5 s" 50
 F1 "NE555 3.5-4.5 s.sch" 50
+F2 "K" O R 4100 2900 50 
+F3 "V" I L 2600 2900 50 
 $EndSheet
 $Sheet
 S 2600 3500 1500 550 
 U 5C24DF8B
 F0 "Counter" 50
 F1 "Counter.sch" 50
+F2 "E" I R 4100 3600 50 
+F3 "D" I R 4100 3900 50 
+F4 "C" I L 2600 3550 50 
 $EndSheet
 $Sheet
 S 700  2600 1450 650 
 U 5C24DFA6
 F0 "Vergelijkknop" 50
 F1 "Vergelijkknop.sch" 50
+F2 "V" O R 2150 2900 50 
 $EndSheet
 $Sheet
 S 700  3500 1450 550 
 U 5C24DFBC
 F0 "NE555 1 Hz Clock" 50
 F1 "NE555 1 Hz Clock.sch" 50
+F2 "C" O R 2150 3550 50 
 $EndSheet
 $Sheet
 S 700  4300 1450 550 
@@ -97,4 +125,44 @@ U 5C24E130
 F0 "Succes LED" 50
 F1 "Succes LED.sch" 50
 $EndSheet
+Wire Wire Line
+	2150 950  2600 950 
+Wire Wire Line
+	2150 1100 2600 1100
+Wire Wire Line
+	2150 1250 2600 1250
+Wire Wire Line
+	2150 1600 2600 1600
+Wire Wire Line
+	2150 1750 2600 1750
+Wire Wire Line
+	2150 1900 2600 1900
+Wire Wire Line
+	6100 2700 6200 2700
+Wire Wire Line
+	6200 2700 6200 2050
+Wire Wire Line
+	6200 2050 6100 2050
+Wire Wire Line
+	6100 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 2850
+Wire Wire Line
+	6300 2850 6100 2850
+Wire Wire Line
+	6100 3000 6400 3000
+Wire Wire Line
+	6400 3000 6400 1750
+Wire Wire Line
+	6400 1750 6100 1750
+Wire Wire Line
+	2150 2900 2600 2900
+Wire Wire Line
+	4100 2900 4350 2900
+Wire Wire Line
+	4100 3600 4350 3600
+Wire Wire Line
+	4100 3900 4350 3900
+Wire Wire Line
+	2150 3550 2600 3550
 $EndSCHEMATC
