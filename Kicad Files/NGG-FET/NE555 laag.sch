@@ -14,6 +14,158 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2350 2450 2    50   Output ~ 0
+Text HLabel 6250 3450 2    50   Output ~ 0
 l
+$Comp
+L Timer:NE555 U?
+U 1 1 5C2651F2
+P 3850 3650
+AR Path="/5C24E034/5C2651F2" Ref="U?"  Part="1" 
+AR Path="/5C24E05E/5C2651F2" Ref="U?"  Part="1" 
+F 0 "U?" H 3950 4300 50  0000 C CNN
+F 1 "NE555" H 4000 4200 50  0000 C CNN
+F 2 "" H 3850 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C2651F9
+P 3850 2700
+AR Path="/5C24E034/5C2651F9" Ref="#PWR?"  Part="1" 
+AR Path="/5C24E05E/5C2651F9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3850 2550 50  0001 C CNN
+F 1 "+5V" H 3865 2873 50  0000 C CNN
+F 2 "" H 3850 2700 50  0001 C CNN
+F 3 "" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2700 3850 2750
+$Comp
+L Device:R R?
+U 1 1 5C265200
+P 4900 3000
+AR Path="/5C24E034/5C265200" Ref="R?"  Part="1" 
+AR Path="/5C24E05E/5C265200" Ref="R?"  Part="1" 
+F 0 "R?" H 4970 3046 50  0000 L CNN
+F 1 "R" H 4970 2955 50  0000 L CNN
+F 2 "" V 4830 3000 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C265207
+P 4900 3650
+AR Path="/5C24E034/5C265207" Ref="R?"  Part="1" 
+AR Path="/5C24E05E/5C265207" Ref="R?"  Part="1" 
+F 0 "R?" H 4970 3696 50  0000 L CNN
+F 1 "R" H 4970 3605 50  0000 L CNN
+F 2 "" V 4830 3650 50  0001 C CNN
+F 3 "~" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C26520E
+P 4900 4350
+AR Path="/5C24E034/5C26520E" Ref="C?"  Part="1" 
+AR Path="/5C24E05E/5C26520E" Ref="C?"  Part="1" 
+F 0 "C?" H 5015 4396 50  0000 L CNN
+F 1 "C" H 5015 4305 50  0000 L CNN
+F 2 "" H 4938 4200 50  0001 C CNN
+F 3 "~" H 4900 4350 50  0001 C CNN
+	1    4900 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2850 4900 2750
+Wire Wire Line
+	4900 2750 3850 2750
+Connection ~ 3850 2750
+Wire Wire Line
+	3850 2750 3850 3250
+Wire Wire Line
+	4900 3150 4900 3300
+Wire Wire Line
+	4900 3300 4650 3300
+Wire Wire Line
+	4650 3300 4650 3650
+Wire Wire Line
+	4650 3650 4350 3650
+Connection ~ 4900 3300
+Wire Wire Line
+	4350 3850 4450 3850
+Connection ~ 4900 3850
+Wire Wire Line
+	4900 3850 4900 4200
+Wire Wire Line
+	3350 3450 3250 3450
+Wire Wire Line
+	3250 3450 3250 3150
+Wire Wire Line
+	3250 3150 4450 3150
+Wire Wire Line
+	4450 3150 4450 3850
+Connection ~ 4450 3850
+Wire Wire Line
+	4450 3850 4900 3850
+Wire Wire Line
+	3850 2750 2950 2750
+Wire Wire Line
+	2950 2750 2950 3850
+Wire Wire Line
+	2950 3850 3350 3850
+$Comp
+L Device:C C?
+U 1 1 5C26522A
+P 3250 4150
+AR Path="/5C24E034/5C26522A" Ref="C?"  Part="1" 
+AR Path="/5C24E05E/5C26522A" Ref="C?"  Part="1" 
+F 0 "C?" H 3365 4196 50  0000 L CNN
+F 1 "10nF" H 3365 4105 50  0000 L CNN
+F 2 "" H 3288 4000 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3650 3250 3650
+Wire Wire Line
+	3250 3650 3250 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5C265233
+P 3850 4700
+AR Path="/5C24E034/5C265233" Ref="#PWR?"  Part="1" 
+AR Path="/5C24E05E/5C265233" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3850 4450 50  0001 C CNN
+F 1 "GND" H 3855 4527 50  0000 C CNN
+F 2 "" H 3850 4700 50  0001 C CNN
+F 3 "" H 3850 4700 50  0001 C CNN
+	1    3850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4050 3850 4500
+Wire Wire Line
+	4900 4500 3850 4500
+Connection ~ 3850 4500
+Wire Wire Line
+	3850 4500 3250 4500
+Wire Wire Line
+	3250 4500 3250 4300
+Wire Wire Line
+	4900 3800 4900 3850
+Wire Wire Line
+	4900 3300 4900 3500
+Wire Wire Line
+	4350 3450 6250 3450
+Wire Wire Line
+	3850 4500 3850 4700
 $EndSCHEMATC
