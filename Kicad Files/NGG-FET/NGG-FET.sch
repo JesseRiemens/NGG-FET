@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -54,5 +54,47 @@ S 700  3500 1450 550
 U 5C24DFBC
 F0 "NE555 1 Hz Clock" 50
 F1 "NE555 1 Hz Clock.sch" 50
+$EndSheet
+$Sheet
+S 700  4300 1450 550 
+U 5C24E034
+F0 "NE555 laag" 50
+F1 "NE555 laag.sch" 50
+$EndSheet
+$Sheet
+S 700  5100 1450 550 
+U 5C24E05E
+F0 "NE555 midden" 50
+F1 "NE555 midden.sch" 50
+$EndSheet
+$Sheet
+S 700  5900 1450 550 
+U 5C24E07E
+F0 "NE555 hoog" 50
+F1 "NE555 hoog.sch" 50
+$EndSheet
+$Sheet
+S 2600 4300 650  2150
+U 5C24E0B3
+F0 "MUX" 50
+F1 "MUX.sch" 50
+$EndSheet
+$Sheet
+S 3500 5900 1000 550 
+U 5C24E0E0
+F0 "Transistor" 50
+F1 "Transistor.sch" 50
+$EndSheet
+$Sheet
+S 4750 5900 1350 550 
+U 5C24E115
+F0 "Buzzer" 50
+F1 "Buzzer.sch" 50
+$EndSheet
+$Sheet
+S 5300 4300 800  650 
+U 5C24E130
+F0 "Succes LED" 50
+F1 "Succes LED.sch" 50
 $EndSheet
 $EndSCHEMATC
