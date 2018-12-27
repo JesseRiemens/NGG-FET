@@ -18,91 +18,195 @@ S 700  700  1450 1450
 U 5C24DEB5
 F0 "Switches" 50
 F1 "Switches.sch" 50
-F2 "A" O R 2150 1250 50 
-F3 "B" O R 2150 1500 50 
+F2 "A2" O R 2150 950 50 
+F3 "A1" O R 2150 1100 50 
+F4 "A0" O R 2150 1250 50 
+F5 "B2" O R 2150 1600 50 
+F6 "B1" O R 2150 1750 50 
+F7 "B0" O R 2150 1900 50 
 $EndSheet
 $Sheet
 S 2600 700  3500 1450
 U 5C24DECE
 F0 "Comparator" 50
 F1 "Comparator.sch" 50
-F2 "A" I L 2600 1250 50 
-F3 "B" I L 2600 1500 50 
+F2 "A2" I L 2600 950 50 
+F3 "A1" I L 2600 1100 50 
+F4 "A0" I L 2600 1250 50 
+F5 "B2" I L 2600 1600 50 
+F6 "B1" I L 2600 1750 50 
+F7 "B0" I L 2600 1900 50 
+F8 "LT" O R 6100 2050 50 
+F9 "GT" O R 6100 1750 50 
+F10 "EQ" O R 6100 1900 50 
 $EndSheet
 $Sheet
 S 4350 2600 1750 1450
 U 5C24DF31
 F0 "Vertaalcircuit" 50
 F1 "Vertaalcircuit.sch" 50
+F2 "GT" I R 6100 3000 50 
+F3 "LT" I R 6100 2700 50 
+F4 "EQ" I R 6100 2850 50 
+F5 "K" I L 4350 2900 50 
+F6 "E" O L 4350 3600 50 
+F7 "D" O L 4350 3900 50 
+F8 "L" O R 6100 3950 50 
 $EndSheet
 $Sheet
 S 2600 2600 1500 650 
 U 5C24DF5D
 F0 "NE555 3.5-4.5 s" 50
 F1 "NE555 3.5-4.5 s.sch" 50
+F2 "K" O R 4100 2900 50 
+F3 "V" I L 2600 2900 50 
 $EndSheet
 $Sheet
 S 2600 3500 1500 550 
 U 5C24DF8B
 F0 "Counter" 50
 F1 "Counter.sch" 50
+F2 "E" I R 4100 3600 50 
+F3 "D" I R 4100 3900 50 
+F4 "C" I L 2600 3750 50 
+F5 "S1" O L 2600 3900 50 
+F6 "S0" O L 2600 4000 50 
 $EndSheet
 $Sheet
 S 700  2600 1450 650 
 U 5C24DFA6
 F0 "Vergelijkknop" 50
 F1 "Vergelijkknop.sch" 50
+F2 "V" O R 2150 2900 50 
 $EndSheet
 $Sheet
 S 700  3500 1450 550 
 U 5C24DFBC
 F0 "NE555 1 Hz Clock" 50
 F1 "NE555 1 Hz Clock.sch" 50
+F2 "C" O R 2150 3750 50 
 $EndSheet
 $Sheet
 S 700  4300 1450 550 
 U 5C24E034
 F0 "NE555 laag" 50
 F1 "NE555 laag.sch" 50
+F2 "l" O R 2150 4550 50 
 $EndSheet
 $Sheet
 S 700  5100 1450 550 
 U 5C24E05E
 F0 "NE555 midden" 50
 F1 "NE555 midden.sch" 50
+F2 "m" O R 2150 5350 50 
 $EndSheet
 $Sheet
 S 700  5900 1450 550 
 U 5C24E07E
 F0 "NE555 hoog" 50
 F1 "NE555 hoog.sch" 50
+F2 "h" O R 2150 6150 50 
 $EndSheet
 $Sheet
 S 2600 4300 650  2150
 U 5C24E0B3
 F0 "MUX" 50
 F1 "MUX.sch" 50
+F2 "S1" O L 2600 4450 50 
+F3 "S0" O L 2600 4350 50 
+F4 "l" O L 2600 4550 50 
+F5 "m" O L 2600 5350 50 
+F6 "h" O L 2600 6150 50 
+F7 "Mo" O R 3250 6150 50 
 $EndSheet
 $Sheet
 S 3500 5900 1000 550 
 U 5C24E0E0
 F0 "Transistor" 50
 F1 "Transistor.sch" 50
+F2 "BZ" O R 4500 6150 50 
+F3 "Mo" I L 3500 6150 50 
 $EndSheet
 $Sheet
 S 4750 5900 1350 550 
 U 5C24E115
 F0 "Buzzer" 50
 F1 "Buzzer.sch" 50
+F2 "BZ" I L 4750 6150 50 
 $EndSheet
 $Sheet
 S 5300 4300 800  650 
 U 5C24E130
 F0 "Succes LED" 50
 F1 "Succes LED.sch" 50
+F2 "L" I R 6100 4400 50 
 $EndSheet
-Wire Bus Line
+Wire Wire Line
+	2150 950  2600 950 
+Wire Wire Line
+	2150 1100 2600 1100
+Wire Wire Line
 	2150 1250 2600 1250
-Wire Bus Line
-	2150 1500 2600 1500
+Wire Wire Line
+	2150 1600 2600 1600
+Wire Wire Line
+	2150 1750 2600 1750
+Wire Wire Line
+	2150 1900 2600 1900
+Wire Wire Line
+	6100 2700 6200 2700
+Wire Wire Line
+	6200 2700 6200 2050
+Wire Wire Line
+	6200 2050 6100 2050
+Wire Wire Line
+	6100 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 2850
+Wire Wire Line
+	6300 2850 6100 2850
+Wire Wire Line
+	6100 3000 6400 3000
+Wire Wire Line
+	6400 3000 6400 1750
+Wire Wire Line
+	6400 1750 6100 1750
+Wire Wire Line
+	2150 2900 2600 2900
+Wire Wire Line
+	4100 2900 4350 2900
+Wire Wire Line
+	4100 3600 4350 3600
+Wire Wire Line
+	4100 3900 4350 3900
+Wire Wire Line
+	2150 3750 2600 3750
+Wire Wire Line
+	2600 4350 2500 4350
+Wire Wire Line
+	2500 4350 2500 4000
+Wire Wire Line
+	2500 4000 2600 4000
+Wire Wire Line
+	2600 3900 2400 3900
+Wire Wire Line
+	2400 3900 2400 4450
+Wire Wire Line
+	2400 4450 2600 4450
+Wire Wire Line
+	2150 4550 2600 4550
+Wire Wire Line
+	2150 5350 2600 5350
+Wire Wire Line
+	2150 6150 2600 6150
+Wire Wire Line
+	3250 6150 3500 6150
+Wire Wire Line
+	4500 6150 4750 6150
+Wire Wire Line
+	6100 3950 6200 3950
+Wire Wire Line
+	6200 3950 6200 4400
+Wire Wire Line
+	6200 4400 6100 4400
 $EndSCHEMATC
