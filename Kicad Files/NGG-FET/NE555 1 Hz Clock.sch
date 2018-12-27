@@ -14,6 +14,144 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2550 2400 2    50   Output ~ 0
+Text HLabel 6600 3900 2    50   Output ~ 0
 C
+$Comp
+L Timer:NE555 U?
+U 1 1 5C25D444
+P 4200 4100
+F 0 "U?" H 4300 4750 50  0000 C CNN
+F 1 "NE555" H 4350 4650 50  0000 C CNN
+F 2 "" H 4200 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C25D44B
+P 4200 3150
+F 0 "#PWR?" H 4200 3000 50  0001 C CNN
+F 1 "+5V" H 4215 3323 50  0000 C CNN
+F 2 "" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3150 4200 3200
+$Comp
+L Device:R R?
+U 1 1 5C25D452
+P 5250 3450
+F 0 "R?" H 5320 3496 50  0000 L CNN
+F 1 "R" H 5320 3405 50  0000 L CNN
+F 2 "" V 5180 3450 50  0001 C CNN
+F 3 "~" H 5250 3450 50  0001 C CNN
+	1    5250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C25D459
+P 5250 4100
+F 0 "R?" H 5320 4146 50  0000 L CNN
+F 1 "R" H 5320 4055 50  0000 L CNN
+F 2 "" V 5180 4100 50  0001 C CNN
+F 3 "~" H 5250 4100 50  0001 C CNN
+	1    5250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C25D460
+P 5250 4800
+F 0 "C?" H 5365 4846 50  0000 L CNN
+F 1 "C" H 5365 4755 50  0000 L CNN
+F 2 "" H 5288 4650 50  0001 C CNN
+F 3 "~" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3300 5250 3200
+Wire Wire Line
+	5250 3200 4200 3200
+Connection ~ 4200 3200
+Wire Wire Line
+	4200 3200 4200 3700
+Wire Wire Line
+	5250 3600 5250 3750
+Wire Wire Line
+	5250 3750 5000 3750
+Wire Wire Line
+	5000 3750 5000 4100
+Wire Wire Line
+	5000 4100 4700 4100
+Connection ~ 5250 3750
+Wire Wire Line
+	4700 4300 4800 4300
+Connection ~ 5250 4300
+Wire Wire Line
+	5250 4300 5250 4650
+Wire Wire Line
+	3700 3900 3600 3900
+Wire Wire Line
+	3600 3900 3600 3600
+Wire Wire Line
+	3600 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 4300
+Connection ~ 4800 4300
+Wire Wire Line
+	4800 4300 5250 4300
+Wire Wire Line
+	4200 3200 3300 3200
+Wire Wire Line
+	3300 3200 3300 4300
+Wire Wire Line
+	3300 4300 3700 4300
+$Comp
+L Device:C C?
+U 1 1 5C25D47C
+P 3600 4600
+F 0 "C?" H 3715 4646 50  0000 L CNN
+F 1 "10nF" H 3715 4555 50  0000 L CNN
+F 2 "" H 3638 4450 50  0001 C CNN
+F 3 "~" H 3600 4600 50  0001 C CNN
+	1    3600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4100 3600 4100
+Wire Wire Line
+	3600 4100 3600 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5C25D485
+P 4200 5150
+F 0 "#PWR?" H 4200 4900 50  0001 C CNN
+F 1 "GND" H 4205 4977 50  0000 C CNN
+F 2 "" H 4200 5150 50  0001 C CNN
+F 3 "" H 4200 5150 50  0001 C CNN
+	1    4200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4500 4200 4950
+Wire Wire Line
+	5250 4950 4200 4950
+Connection ~ 4200 4950
+Wire Wire Line
+	4200 4950 3600 4950
+Wire Wire Line
+	3600 4950 3600 4750
+Wire Wire Line
+	5250 4250 5250 4300
+Wire Wire Line
+	5250 3750 5250 3950
+Wire Wire Line
+	4700 3900 6600 3900
+Wire Wire Line
+	4200 4950 4200 5150
 $EndSCHEMATC
