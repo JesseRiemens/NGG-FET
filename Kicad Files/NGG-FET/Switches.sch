@@ -14,40 +14,222 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	3300 2500 2800 2500
-Wire Wire Line
-	3300 2350 2800 2350
-Wire Wire Line
-	3300 2200 2800 2200
-Text Label 3000 2200 0    50   ~ 0
+Text Label 3100 1800 0    50   ~ 0
 A2
-Text Label 3000 2350 0    50   ~ 0
+Text Label 3100 1900 0    50   ~ 0
 A1
-Text Label 3000 2500 0    50   ~ 0
+Text Label 3100 2000 0    50   ~ 0
 A0
-Wire Wire Line
-	3300 3050 2800 3050
-Wire Wire Line
-	3300 3200 2800 3200
-Wire Wire Line
-	3300 3350 2800 3350
-Text Label 3000 3050 0    50   ~ 0
+Text Label 3200 3100 0    50   ~ 0
 B2
-Text Label 3000 3200 0    50   ~ 0
+Text Label 3200 3200 0    50   ~ 0
 B1
-Text Label 3000 3350 0    50   ~ 0
+Text Label 3200 3300 0    50   ~ 0
 B0
-Text HLabel 3300 2200 2    50   Output ~ 0
+Text HLabel 3400 1800 2    50   Output ~ 0
 A2
-Text HLabel 3300 2350 2    50   Output ~ 0
+Text HLabel 3400 1900 2    50   Output ~ 0
 A1
-Text HLabel 3300 2500 2    50   Output ~ 0
+Text HLabel 3400 2000 2    50   Output ~ 0
 A0
-Text HLabel 3300 3050 2    50   Output ~ 0
+Text HLabel 3500 3100 2    50   Output ~ 0
 B2
-Text HLabel 3300 3200 2    50   Output ~ 0
+Text HLabel 3500 3200 2    50   Output ~ 0
 B1
-Text HLabel 3300 3350 2    50   Output ~ 0
+Text HLabel 3500 3300 2    50   Output ~ 0
 B0
+$Comp
+L Switch:SW_DIP_x03 SW?
+U 1 1 5C2CE7C4
+P 2250 2000
+F 0 "SW?" H 2250 2467 50  0000 C CNN
+F 1 "SW_DIP_x03" H 2250 2376 50  0000 C CNN
+F 2 "" H 2250 2000 50  0001 C CNN
+F 3 "" H 2250 2000 50  0001 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x03 SW?
+U 1 1 5C2CE82A
+P 2200 3300
+F 0 "SW?" H 2200 3767 50  0000 C CNN
+F 1 "SW_DIP_x03" H 2200 3676 50  0000 C CNN
+F 2 "" H 2200 3300 50  0001 C CNN
+F 3 "" H 2200 3300 50  0001 C CNN
+	1    2200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C2CEE7A
+P 2600 2950
+F 0 "R?" H 2670 2996 50  0000 L CNN
+F 1 "R" H 2670 2905 50  0000 L CNN
+F 2 "" V 2530 2950 50  0001 C CNN
+F 3 "~" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3100 2500 3100
+Wire Wire Line
+	2500 3200 2800 3200
+Wire Wire Line
+	2500 3300 3000 3300
+$Comp
+L Device:R R?
+U 1 1 5C2CF14B
+P 2800 3050
+F 0 "R?" H 2870 3096 50  0000 L CNN
+F 1 "R" H 2870 3005 50  0000 L CNN
+F 2 "" V 2730 3050 50  0001 C CNN
+F 3 "~" H 2800 3050 50  0001 C CNN
+	1    2800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C2CF1BA
+P 3000 3150
+F 0 "R?" H 3070 3196 50  0000 L CNN
+F 1 "R" H 3070 3105 50  0000 L CNN
+F 2 "" V 2930 3150 50  0001 C CNN
+F 3 "~" H 3000 3150 50  0001 C CNN
+	1    3000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3300 3500 3300
+Connection ~ 3000 3300
+Wire Wire Line
+	2800 3200 3500 3200
+Connection ~ 2800 3200
+Wire Wire Line
+	2600 3100 3500 3100
+Connection ~ 2600 3100
+Wire Wire Line
+	3000 3000 3000 2800
+Wire Wire Line
+	3000 2800 2800 2800
+Wire Wire Line
+	2800 2900 2800 2800
+Connection ~ 2800 2800
+Wire Wire Line
+	2800 2800 2600 2800
+$Comp
+L power:+5V #PWR?
+U 1 1 5C2CF6F9
+P 2800 2800
+F 0 "#PWR?" H 2800 2650 50  0001 C CNN
+F 1 "+5V" H 2815 2973 50  0000 C CNN
+F 2 "" H 2800 2800 50  0001 C CNN
+F 3 "" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2000 3000 2000
+Wire Wire Line
+	2550 1900 2800 1900
+Wire Wire Line
+	2550 1800 3400 1800
+$Comp
+L Device:R R?
+U 1 1 5C2CFEC4
+P 2550 1950
+F 0 "R?" H 2620 1996 50  0000 L CNN
+F 1 "R" H 2620 1905 50  0000 L CNN
+F 2 "" V 2480 1950 50  0001 C CNN
+F 3 "~" H 2550 1950 50  0001 C CNN
+	1    2550 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 1800
+$Comp
+L Device:R R?
+U 1 1 5C2CFF17
+P 2800 2050
+F 0 "R?" H 2870 2096 50  0000 L CNN
+F 1 "R" H 2870 2005 50  0000 L CNN
+F 2 "" V 2730 2050 50  0001 C CNN
+F 3 "~" H 2800 2050 50  0001 C CNN
+	1    2800 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1900
+Wire Wire Line
+	2800 1900 3400 1900
+$Comp
+L Device:R R?
+U 1 1 5C2CFF82
+P 3000 2150
+F 0 "R?" H 3070 2196 50  0000 L CNN
+F 1 "R" H 3070 2105 50  0000 L CNN
+F 2 "" V 2930 2150 50  0001 C CNN
+F 3 "~" H 3000 2150 50  0001 C CNN
+	1    3000 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 2000
+Wire Wire Line
+	3000 2000 3400 2000
+Wire Wire Line
+	3000 2300 2800 2300
+Wire Wire Line
+	2800 2300 2800 2200
+Wire Wire Line
+	2800 2300 2550 2300
+Wire Wire Line
+	2550 2300 2550 2100
+Connection ~ 2800 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5C2D039B
+P 2800 2300
+F 0 "#PWR?" H 2800 2050 50  0001 C CNN
+F 1 "GND" H 2805 2127 50  0000 C CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2000 1950 1900
+Connection ~ 1950 1800
+Wire Wire Line
+	1950 1800 1950 1600
+Connection ~ 1950 1900
+Wire Wire Line
+	1950 1900 1950 1800
+$Comp
+L power:+5V #PWR?
+U 1 1 5C2D0938
+P 1950 1600
+F 0 "#PWR?" H 1950 1450 50  0001 C CNN
+F 1 "+5V" H 1965 1773 50  0000 C CNN
+F 2 "" H 1950 1600 50  0001 C CNN
+F 3 "" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3100 1900 3200
+Connection ~ 1900 3200
+Wire Wire Line
+	1900 3200 1900 3300
+Connection ~ 1900 3300
+Wire Wire Line
+	1900 3300 1900 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5C2D1277
+P 1900 3500
+F 0 "#PWR?" H 1900 3250 50  0001 C CNN
+F 1 "GND" H 1905 3327 50  0000 C CNN
+F 2 "" H 1900 3500 50  0001 C CNN
+F 3 "" H 1900 3500 50  0001 C CNN
+	1    1900 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
