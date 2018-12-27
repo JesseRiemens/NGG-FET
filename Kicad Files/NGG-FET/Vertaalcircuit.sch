@@ -14,18 +14,390 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1300 1250 0    50   Input ~ 0
+Text HLabel 1450 1200 0    50   Input ~ 0
 GT
-Text HLabel 1300 1550 0    50   Input ~ 0
+Text HLabel 1450 1600 0    50   Input ~ 0
 LT
-Text HLabel 1300 1800 0    50   Input ~ 0
+Text HLabel 750  5050 0    50   Input ~ 0
 EQ
-Text HLabel 1300 2050 0    50   Input ~ 0
+Text HLabel 750  3500 0    50   Input ~ 0
 K
-Text HLabel 4250 1350 2    50   Output ~ 0
+Text HLabel 3850 2700 2    50   Output ~ 0
 E
-Text HLabel 4250 1750 2    50   Output ~ 0
+Text HLabel 1600 1400 2    50   Output ~ 0
 D
-Text HLabel 4250 2100 2    50   Output ~ 0
+Text HLabel 3900 4450 2    50   Output ~ 0
 L
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C27F1BF
+P 1250 3850
+AR Path="/5C27F1BF" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F1BF" Ref="Q24"  Part="1" 
+F 0 "Q24" H 1455 3896 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 1455 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1450 3950 50  0001 C CNN
+F 3 "~" H 1250 3850 50  0001 C CNN
+	1    1250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C27F1C6
+P 1250 3200
+AR Path="/5C27F1C6" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F1C6" Ref="Q23"  Part="1" 
+F 0 "Q23" H 1456 3154 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 1456 3245 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1450 3300 50  0001 C CNN
+F 3 "~" H 1250 3200 50  0001 C CNN
+	1    1250 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1050 3850 750  3850
+Wire Wire Line
+	750  3850 750  3200
+Wire Wire Line
+	750  3200 1050 3200
+Wire Wire Line
+	1350 3400 1350 3550
+Connection ~ 1350 3550
+Wire Wire Line
+	1350 3550 1350 3650
+$Comp
+L power:+5V #PWR?
+U 1 1 5C27F1D4
+P 1350 3000
+AR Path="/5C27F1D4" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C27F1D4" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 1350 2850 50  0001 C CNN
+F 1 "+5V" H 1365 3173 50  0000 C CNN
+F 2 "" H 1350 3000 50  0001 C CNN
+F 3 "" H 1350 3000 50  0001 C CNN
+	1    1350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C27F1DA
+P 1350 4050
+AR Path="/5C27F1DA" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C27F1DA" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 1350 3800 50  0001 C CNN
+F 1 "GND" H 1355 3877 50  0000 C CNN
+F 2 "" H 1350 4050 50  0001 C CNN
+F 3 "" H 1350 4050 50  0001 C CNN
+	1    1350 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 900  3550 0    50   ~ 0
+Inverter
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C27F286
+P 2650 2500
+AR Path="/5C27F286" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F286" Ref="Q27"  Part="1" 
+F 0 "Q27" H 2856 2454 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 2856 2545 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 2600 50  0001 C CNN
+F 3 "~" H 2650 2500 50  0001 C CNN
+	1    2650 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C27F28D
+P 3400 2500
+AR Path="/5C27F28D" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F28D" Ref="Q33"  Part="1" 
+F 0 "Q33" H 3606 2454 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 3606 2545 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3600 2600 50  0001 C CNN
+F 3 "~" H 3400 2500 50  0001 C CNN
+	1    3400 2500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2300 3500 2300
+$Comp
+L power:+5V #PWR?
+U 1 1 5C27F295
+P 2750 2300
+AR Path="/5C27F295" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C27F295" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 2750 2150 50  0001 C CNN
+F 1 "+5V" H 2765 2473 50  0000 C CNN
+F 2 "" H 2750 2300 50  0001 C CNN
+F 3 "" H 2750 2300 50  0001 C CNN
+	1    2750 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 2300
+Wire Wire Line
+	3200 2500 3200 2200
+Wire Wire Line
+	2450 2500 2350 2500
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C27F29E
+P 2650 2900
+AR Path="/5C27F29E" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F29E" Ref="Q28"  Part="1" 
+F 0 "Q28" H 2855 2946 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 2855 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 3000 50  0001 C CNN
+F 3 "~" H 2650 2900 50  0001 C CNN
+	1    2650 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 2700
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C27F2A6
+P 2650 3300
+AR Path="/5C27F2A6" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C27F2A6" Ref="Q29"  Part="1" 
+F 0 "Q29" H 2855 3346 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 2855 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 3400 50  0001 C CNN
+F 3 "~" H 2650 3300 50  0001 C CNN
+	1    2650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3300 2350 3300
+Wire Wire Line
+	2350 3300 2350 2500
+Wire Wire Line
+	2300 2200 2400 2200
+Wire Wire Line
+	2450 2900 2400 2900
+Wire Wire Line
+	2400 2900 2400 2200
+Connection ~ 2400 2200
+Wire Wire Line
+	2400 2200 3200 2200
+Wire Wire Line
+	2750 2700 3500 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5C27F2B7
+P 2750 3500
+AR Path="/5C27F2B7" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C27F2B7" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H 2750 3250 50  0001 C CNN
+F 1 "GND" H 2755 3327 50  0000 C CNN
+F 2 "" H 2750 3500 50  0001 C CNN
+F 3 "" H 2750 3500 50  0001 C CNN
+	1    2750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2700 3850 2700
+Connection ~ 3500 2700
+Text Notes 2950 2650 0    50   ~ 0
+NOR
+Text Label 1650 3550 0    50   ~ 0
+~K
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C285344
+P 1250 5350
+AR Path="/5C285344" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C285344" Ref="Q26"  Part="1" 
+F 0 "Q26" H 1455 5396 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 1455 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1450 5450 50  0001 C CNN
+F 3 "~" H 1250 5350 50  0001 C CNN
+	1    1250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C28534B
+P 1250 4700
+AR Path="/5C28534B" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C28534B" Ref="Q25"  Part="1" 
+F 0 "Q25" H 1456 4654 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 1456 4745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 1450 4800 50  0001 C CNN
+F 3 "~" H 1250 4700 50  0001 C CNN
+	1    1250 4700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1050 5350 750  5350
+Wire Wire Line
+	750  5350 750  4700
+Wire Wire Line
+	750  4700 1050 4700
+Wire Wire Line
+	1350 4900 1350 5050
+Connection ~ 1350 5050
+Wire Wire Line
+	1350 5050 1350 5150
+$Comp
+L power:+5V #PWR?
+U 1 1 5C285359
+P 1350 4500
+AR Path="/5C285359" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C285359" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 1350 4350 50  0001 C CNN
+F 1 "+5V" H 1365 4673 50  0000 C CNN
+F 2 "" H 1350 4500 50  0001 C CNN
+F 3 "" H 1350 4500 50  0001 C CNN
+	1    1350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C28535F
+P 1350 5550
+AR Path="/5C28535F" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C28535F" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 1350 5300 50  0001 C CNN
+F 1 "GND" H 1355 5377 50  0000 C CNN
+F 2 "" H 1350 5550 50  0001 C CNN
+F 3 "" H 1350 5550 50  0001 C CNN
+	1    1350 5550
+	1    0    0    -1  
+$EndComp
+Text Notes 900  5050 0    50   ~ 0
+Inverter
+Text Label 1650 5050 0    50   ~ 0
+~EQ
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C28E80B
+P 2650 4250
+AR Path="/5C28E80B" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C28E80B" Ref="Q30"  Part="1" 
+F 0 "Q30" H 2856 4204 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 2856 4295 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 4350 50  0001 C CNN
+F 3 "~" H 2650 4250 50  0001 C CNN
+	1    2650 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C28E812
+P 3400 4250
+AR Path="/5C28E812" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C28E812" Ref="Q34"  Part="1" 
+F 0 "Q34" H 3606 4204 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 3606 4295 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3600 4350 50  0001 C CNN
+F 3 "~" H 3400 4250 50  0001 C CNN
+	1    3400 4250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4050 3500 4050
+$Comp
+L power:+5V #PWR?
+U 1 1 5C28E81A
+P 2750 4050
+AR Path="/5C28E81A" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C28E81A" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 2750 3900 50  0001 C CNN
+F 1 "+5V" H 2765 4223 50  0000 C CNN
+F 2 "" H 2750 4050 50  0001 C CNN
+F 3 "" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 4050
+Wire Wire Line
+	3200 4250 3200 3950
+Wire Wire Line
+	2450 4250 2150 4250
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C28E823
+P 2650 4650
+AR Path="/5C28E823" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C28E823" Ref="Q31"  Part="1" 
+F 0 "Q31" H 2855 4696 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 2855 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 4750 50  0001 C CNN
+F 3 "~" H 2650 4650 50  0001 C CNN
+	1    2650 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 4450
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5C28E82B
+P 2650 5050
+AR Path="/5C28E82B" Ref="Q?"  Part="1" 
+AR Path="/5C24DF31/5C28E82B" Ref="Q32"  Part="1" 
+F 0 "Q32" H 2855 5096 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 2855 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 5150 50  0001 C CNN
+F 3 "~" H 2650 5050 50  0001 C CNN
+	1    2650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5050 2150 5050
+Wire Wire Line
+	2150 5050 2150 4250
+Wire Wire Line
+	2300 3950 2400 3950
+Wire Wire Line
+	2450 4650 2400 4650
+Wire Wire Line
+	2400 4650 2400 3950
+Connection ~ 2400 3950
+Wire Wire Line
+	2400 3950 3200 3950
+Wire Wire Line
+	2750 4450 3500 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5C28E83C
+P 2750 5250
+AR Path="/5C28E83C" Ref="#PWR?"  Part="1" 
+AR Path="/5C24DF31/5C28E83C" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 2750 5000 50  0001 C CNN
+F 1 "GND" H 2755 5077 50  0000 C CNN
+F 2 "" H 2750 5250 50  0001 C CNN
+F 3 "" H 2750 5250 50  0001 C CNN
+	1    2750 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4450
+Text Notes 2950 4400 0    50   ~ 0
+NOR
+Wire Wire Line
+	2300 3550 2300 3950
+Wire Wire Line
+	1350 3550 2300 3550
+Wire Wire Line
+	1350 5050 2150 5050
+Connection ~ 2150 5050
+Wire Wire Line
+	3500 4450 3900 4450
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5C2A9433
+P 1450 1400
+F 0 "JP1" V 1496 1468 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1405 1468 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1450 1400 50  0001 C CNN
+F 3 "~" H 1450 1400 50  0001 C CNN
+	1    1450 1400
+	0    -1   -1   0   
+$EndComp
+Text HLabel 2300 2200 0    50   Input ~ 0
+EQ
+Wire Wire Line
+	2300 3550 2300 3300
+Wire Wire Line
+	2300 3300 2350 3300
+Connection ~ 2300 3550
+Connection ~ 2350 3300
 $EndSCHEMATC
