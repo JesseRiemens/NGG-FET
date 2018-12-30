@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:NGG-FET-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -8,7 +7,7 @@ Sheet 12 15
 Title ""
 Date ""
 Rev ""
-Comp ""
+Comp "Hogeschool Rotterdam"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -313,7 +312,7 @@ F 3 "~" H 12050 4200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Notes 12950 2850 0    50   ~ 0
-NAND
+AND
 $Comp
 L power:GND #PWR?
 U 1 1 5C2C95EF
@@ -505,7 +504,7 @@ F 3 "~" H 12100 2450 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Notes 14100 1600 0    50   ~ 0
-AND
+NAND
 $Comp
 L power:GND #PWR?
 U 1 1 5C2C9652

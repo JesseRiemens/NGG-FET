@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:NGG-FET-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -8,7 +7,7 @@ Sheet 9 15
 Title ""
 Date ""
 Rev ""
-Comp ""
+Comp "Hogeschool Rotterdam"
 Comment1 ""
 Comment2 ""
 Comment3 ""
